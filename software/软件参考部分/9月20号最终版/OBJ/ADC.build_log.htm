@@ -1,0 +1,97 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.27.1.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: qiang jin, jinqiang, LIC=LSNXV-PDTSK-Y8KFK-ZN7U4-S94MF-RMGIL
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.14.0.0
+Toolchain Path:  D:\a\keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+C:\Users\金枪张辽\Desktop\9月22号板\最终版\USER\ADC.uvprojx
+Project File Date:  08/19/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 1 (build 106)', folder: 'D:\a\keil5\ARM\ARMCC\Bin'
+Build target 'ADC'
+compiling lcd.c...
+..\HARDWARE\LCD\lcd.h(177): error:  #7: unrecognized token
+  void OLED_Showdecimal(u8 x,u8 y,float num,u8 len,u8 size2);		`			//显示小数点
+..\HARDWARE\LCD\lcd.h(177): error:  #169: expected a declaration
+  void OLED_Showdecimal(u8 x,u8 y,float num,u8 len,u8 size2);		`			//显示小数点
+..\HARDWARE\LCD\lcd.c(3033): error:  #169: expected a declaration
+  {         	
+..\HARDWARE\LCD\lcd.c(3054): error:  #169: expected a declaration
+  			if(temp==0)
+..\HARDWARE\LCD\lcd.c(3058): warning:  #12-D: parsing restarts here after previous syntax error
+  			}else enshow=1; 
+..\HARDWARE\LCD\lcd.c(3060): error:  #169: expected a declaration
+  		}
+..\HARDWARE\LCD\lcd.c(3062): error:  #169: expected a declaration
+  	}
+..\HARDWARE\LCD\lcd.c(3064): error:  #20: identifier "x" is undefined
+  	LCD_ShowChar(x+(size2/2)*5,y,((int)(temp2*100)%10) + '0',size2); //小数第2位
+..\HARDWARE\LCD\lcd.c(3064): error:  #18: expected a ")"
+  	LCD_ShowChar(x+(size2/2)*5,y,((int)(temp2*100)%10) + '0',size2); //小数第2位
+..\HARDWARE\LCD\lcd.c(3064): warning:  #77-D: this declaration has no storage class or type specifier
+  	LCD_ShowChar(x+(size2/2)*5,y,((int)(temp2*100)%10) + '0',size2); //小数第2位
+..\HARDWARE\LCD\lcd.c(3064): error:  #147: declaration is incompatible with "void LCD_ShowChar(u16, u16, u8, u8, u8)" (declared at line 2789)
+  	LCD_ShowChar(x+(size2/2)*5,y,((int)(temp2*100)%10) + '0',size2); //小数第2位
+..\HARDWARE\LCD\lcd.c(3065): error:  #20: identifier "x" is undefined
+  	LCD_ShowChar(x+(size2/2)*6,y,((int)(temp2*1000)%10) + '0',size2); //小数第3位
+..\HARDWARE\LCD\lcd.c(3065): error:  #18: expected a ")"
+  	LCD_ShowChar(x+(size2/2)*6,y,((int)(temp2*1000)%10) + '0',size2); //小数第3位
+..\HARDWARE\LCD\lcd.c(3065): warning:  #77-D: this declaration has no storage class or type specifier
+  	LCD_ShowChar(x+(size2/2)*6,y,((int)(temp2*1000)%10) + '0',size2); //小数第3位
+..\HARDWARE\LCD\lcd.c(3066): error:  #20: identifier "x" is undefined
+  	LCD_ShowChar(x+(size2/2)*7,y,((int)(temp2*10000)%10) + '0',size2); //小数第4位
+..\HARDWARE\LCD\lcd.c(3066): error:  #18: expected a ")"
+  	LCD_ShowChar(x+(size2/2)*7,y,((int)(temp2*10000)%10) + '0',size2); //小数第4位
+..\HARDWARE\LCD\lcd.c(3066): warning:  #77-D: this declaration has no storage class or type specifier
+  	LCD_ShowChar(x+(size2/2)*7,y,((int)(temp2*10000)%10) + '0',size2); //小数第4位
+..\HARDWARE\LCD\lcd.c(3067): error:  #169: expected a declaration
+  }
+..\HARDWARE\LCD\lcd.c(3087): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+..\HARDWARE\LCD\lcd.c: 5 warnings, 14 errors
+compiling main.c...
+..\HARDWARE\LCD\lcd.h(177): error:  #7: unrecognized token
+  void OLED_Showdecimal(u8 x,u8 y,float num,u8 len,u8 size2);		`			//显示小数点
+..\HARDWARE\LCD\lcd.h(177): error:  #169: expected a declaration
+  void OLED_Showdecimal(u8 x,u8 y,float num,u8 len,u8 size2);		`			//显示小数点
+main.c(69): warning:  #223-D: function "window" declared implicitly
+  	window();				//界面初始化
+main.c(341): error:  #171: invalid type conversion
+  		LCD_ShowString(10,10,64,16,16,(char*)THDEND);
+main.c: 1 warning, 3 errors
+"..\OBJ\ADC.axf" - 17 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.1.0.5.pack
+                Keil.STM32F1xx_DFP.1.0.5
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_ADC
+  D:\a\keil5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
